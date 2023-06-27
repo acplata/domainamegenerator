@@ -1,11 +1,16 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let pronoun = ['the','our'];
+let adj = ['great', 'big' ];
+let noun = ['jogger','racoon'];
+let browser = [`.com`,`.us`,`.org`,`.net`]
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+const parrafo = document.getElementById("domain");
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+for (let i = 0; i < pronoun.length; i++) { 
+  for (let j = 0; j < adj.length; j++) {
+      for (let a = 0; a < noun.length; a++) {
+          for (let b = 0; b < browser.length; b++) {
+              console.log(`${pronoun[i]}${adj[j]}${noun[a]}${browser[b]}`)
+             }
+         }
+     }
+  }
